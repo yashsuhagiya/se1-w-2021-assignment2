@@ -1,0 +1,14 @@
+Port 10022
+
+HostKey /home/ubuntu/ssh/ssh_host_rsa_key
+
+AuthorizedKeysFile	/home/ubuntu/.ssh/authorized_keys
+
+ChallengeResponseAuthentication no
+PubkeyAuthentication yes
+UsePrivilegeSeparation no
+UsePAM yes
+
+Subsystem sftp /usr/lib/openssh/sftp-server
+SyslogFacility AUTH 
+LogLevel INFO
